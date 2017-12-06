@@ -5,6 +5,7 @@ from team.serializers import MemberSerializer
 from team.models import Member
 from rest_framework import generics, filters, status
 from rest_framework.viewsets import ModelViewSet
+from rest_framework.decorators import list_route
 
 # Create your views here.
 
@@ -33,3 +34,7 @@ class MemberViewSet(MemberMixin, ModelViewSet):
     
     def destroy(self, request, *args, **kwargs):
         return ModelViewSet.destroy(self, request, *args, **kwargs)
+
+    def get_queryset(self):
+        return  Member.objects.all()
+        
