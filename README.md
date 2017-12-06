@@ -15,6 +15,7 @@ A ​team-member ​management application.
      
 3. How ​to ​test ​the ​project, ​ideally ​with ​example ​CURL ​commands ​that ​exercise ​the ​various rest ​endpoints?    
     - I have used postman tool to test the API's
+    - You may directly use this URL (http://127.0.0.1:8000/team/member/) to do CRUD operations on the Member table.
     - A detailed API documentation for the app is available on this postman URL https://documenter.getpostman.com/view/43395/instawork/7EK6BdW
 
     Create Member:
